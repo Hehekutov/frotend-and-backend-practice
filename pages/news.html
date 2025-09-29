@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Новости — Пример</title>
+  <style>
+    /* Простой общий стиль */
+    body { font-family: Arial, sans-serif; line-height: 1.5; margin: 0; padding: 0; color:#222; background:#f7f7f7; }
+    .container { max-width: 1000px; margin: 0 auto; padding: 20px; }
+    header, footer { background:#1f2937; color:#fff; padding: 16px 20px; }
+    nav { margin-top: 8px; }
+    nav a { color:#cbd5e1; margin-right:12px; text-decoration:none; }
+    main { background:#fff; padding:20px; margin-top:16px; border-radius:8px; }
+    .news-list { display: grid; gap:16px; }
+    article.news { border:1px solid #e5e7eb; padding:16px; border-radius:6px; background:#fff; }
+    .meta { color:#6b7280; font-size:0.9rem; margin-bottom:8px; }
+    h1,h2 { margin:0 0 8px 0; }
+    footer { margin-top:16px; text-align:center; font-size:0.9rem; }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Мой сайт — Новости</h1>
+      <nav>
+        <a href="../index.html">Главная</a>
+        <a href="news.html">Новости</a>
+        <a href="goods.html">Каталог</a>
+        <a href="contacts.html">Контакты</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section>
+      <h2>Последние новости</h2>
+      <div class="news-list">
+        <!-- Новость 1 -->
+        <article class="news">
+          <h3>Новая версия продукта выпущена</h3>
+          <div class="meta">12 сентября 2025 — Автор: Иван Робинов</div>
+          <p>Мы рады объявить о выпуске новой версии продукта. В этой версии улучшена производительность и исправлены известные ошибки.</p>
+        </article>
+
+        <!-- Новость 2 -->
+        <article class="news">
+          <h3>Компания открывает офис в Уфе</h3>
+          <div class="meta">5 сентября 2025 — Автор: Hehekutov</div>
+          <p>Компания расширяет своё присутствие в Республике Башкортостан и открывает новый офис в Уфе. Это позволит улучшить поддержку клиентов в регионе.</p>
+        </article>
+
+        <!-- Новость 3 -->
+        <article class="news">
+          <h3>Советы по безопасности данных</h3>
+          <div class="meta">1 сентября 2025 — Автор: Техподдержка</div>
+          <p>В этой статье — ключевые рекомендации по защите учетных записей и личных данных: двухфакторная аутентификация, сложные пароли и регулярные обновления.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      © 2025 Мой сайт • Все права защищены
+    </div>
+  </footer>
+</body>
+</html>
