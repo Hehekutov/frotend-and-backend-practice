@@ -1,56 +1,47 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Контакты — Пример</title>
-  <style>
-    body { font-family: Arial, sans-serif; background:#eef2f7; margin:0; color:#111; }
-    .container { max-width:900px; margin:0 auto; padding:20px; }
-    header, footer { background:#0f172a; color:#fff; padding:16px; }
-    nav a { color:#cbd5e1; margin-right:12px; text-decoration:none; }
-    main { background:#fff; padding:20px; border-radius:8px; margin-top:16px; }
-    .contact-item { margin-bottom:12px; }
-    .email { font-weight:600; color:#0b5fff; }
-    .btn-call { display:inline-block; padding:10px 16px; border-radius:6px; background:#0b5fff; color:#fff; text-decoration:none; }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты</title>
+    <link rel="stylesheet" href="../style/styles.css">
 </head>
 <body>
-  <header>
-    <div class="container">
-      <h1>Контакты</h1>
-      <nav>
-        <a href="../index.html">Главная</a>
-        <a href="news.html">Новости</a>
-        <a href="goods.html">Каталог</a>
-        <a href="contacts.html">Контакты</a>
-      </nav>
+    <div class="page-container">
+        <div class="header">Контакты</div>
+
+        <div class="nav">
+            <ul class="nav-list">
+                <li class="nav-item"><a class="nav-link" href="../index.html">Главная</a></li>
+                <li class="nav-item"><a class="nav-link" href="news.html">Новости</a></li>
+                <li class="nav-item"><a class="nav-link" href="practices.html">Практики</a></li> 
+                <li class="nav-item"><a class="nav-link" href="goods.html">Товары</a></li>
+                <li class="nav-item"><a class="nav-link" href="contacts.html">Контакты</a></li>
+            </ul>
+        </div>
+
+        <div class="content">
+            <h1 class="profile-title">Свяжитесь с нами</h1>
+
+            <div class="contact-card">
+                <h3>Электронная почта</h3>
+                <p><a href="mailto:info@example.com">info@example.com</a></p>
+            </div>
+
+            <div class="contact-card">
+                <h3>Адрес</h3>
+                <p>ул. Карла Маркса, 2, г. Хабаровск, Россия</p>
+            </div>
+
+            <div class="contact-card">
+                <h3>Телефон</h3>
+                <p><a class="btn-call" href="tel:+79850561930">+7 (985) 056-19-30</a></p>
+            </div>
+
+            <p style="text-align:center; margin-top:30px;">Мы рады вас видеть!</p>
+        </div>
+
+        <div class="footer">© 2025 Контактный центр — Работаем 09:00–21:00</div>
     </div>
-  </header>
-
-  <main class="container">
-    <h2>Свяжитесь с нами</h2>
-    <div class="contact-item">
-      <strong>Электронная почта:</strong>
-      <div class="email"><a href="mailto:info@example.com">info@example.com</a></div>
-    </div>
-
-    <div class="contact-item">
-      <strong>Адрес:</strong>
-      <div>ул. Карла Маркса, 2, г. Хабаровск, Россия</div>
-    </div>
-
-    <div class="contact-item">
-      
-      <a class="btn-call" href="tel:+79850561930">Позвоните мне</a>
-    </div>
-
-    <hr style="margin:20px 0;">
-    <p>Мы рады вас видеть!</p>
-  </main>
-
-  <footer>
-    <div class="container">© 2025 Контактный центр — Работаем 09:00–21:00</div>
-  </footer>
 </body>
 </html>

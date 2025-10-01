@@ -1,66 +1,50 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Каталог товаров — Пример</title>
-  <style>
-    body { font-family: Arial, sans-serif; background:#f3f4f6; color:#111; margin:0; }
-    .container { max-width:1100px; margin:0 auto; padding:20px; }
-    header, footer { background:#111827; color:#fff; padding:16px; }
-    nav a { color:#cbd5e1; margin-right:12px; text-decoration:none; }
-    main { margin-top:16px; }
-    .catalog { display:grid; grid-template-columns: repeat(auto-fill,minmax(220px,1fr)); gap:16px; }
-    .card { background:#fff; border:1px solid #e5e7eb; padding:12px; border-radius:8px; text-align:center; }
-    .card img { width:100%; height:150px; object-fit:cover; border-radius:6px; }
-    .price { font-weight:700; margin-top:8px; }
-    .product-name { margin:8px 0; font-size:1rem; }
-    footer { text-align:center; margin-top:20px; }
-  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Каталог товаров</title>
+  <link rel="stylesheet" href="../style/styles.css">
 </head>
 <body>
-  <header>
-    <div class="container">
-      <h1>Магазин — Каталог</h1>
-      <nav>
-        <a href="../index.html">Главная</a>
-        <a href="news.html">Новости</a>
-        <a href="goods.html">Каталог</a>
-        <a href="contacts.html">Контакты</a>
-      </nav>
+  <div class="page-container">
+    <div class="header">Каталог товаров</div>
+
+    <div class="nav">
+      <ul class="nav-list">
+        <li class="nav-item"><a class="nav-link" href="../index.html">Главная</a></li>
+        <li class="nav-item"><a class="nav-link" href="news.html">Новости</a></li>
+        <li class="nav-item"><a class="nav-link" href="practices.html">Практики</a></li> 
+        <li class="nav-item"><a class="nav-link" href="goods.html">Товары</a></li>
+        <li class="nav-item"><a class="nav-link" href="contacts.html">Контакты</a></li>
+      </ul>
     </div>
-  </header>
 
-  <main class="container">
-    <h2>Товары</h2>
-    <div class="catalog">
-      
-      <div class="card">
-        <img src="images/goods1.JPG" alt="Товар 1">
-        <div class="product-name">Телефон</div>
-        <div class="price">65 000 ₽</div>
+    <div class="content">
+      <h1 class="profile-title">Наши товары</h1>
+
+      <div class="catalog">
+        <div class="product-card">
+          <img src="images/goods1.JPG" alt="Товар 1">
+          <h3 class="product-name">Телефон</h3>
+          <div class="price">65 000 ₽</div>
+        </div>
+
+        <div class="product-card">
+          <img src="images/goods2.JPG" alt="Товар 2">
+          <h3 class="product-name">Фитнес-браслет Xiaomi</h3>
+          <div class="price">5 000 ₽</div>
+        </div>
+
+        <div class="product-card">
+          <img src="images/goods3.JPG" alt="Товар 3">
+          <h3 class="product-name">Портативный аккумулятор 10000mAh</h3>
+          <div class="price">3 000 ₽</div>
+        </div>
       </div>
-
-      
-      <div class="card">
-        <img src="images/goods2.JPG" alt="Товар 2" width="200" height="250">
-        <div class="product-name">Фитнес-браслет Xiaomi</div>
-        <div class="price">5 000₽</div>
-      </div>
-
-      
-      <div class="card">
-        <img src="images/goods3.JPG" alt="Товар 3">
-        <div class="product-name">Портативный аккумулятор 10000mAh</div>
-        <div class="price">3 000 ₽</div>
-      </div>
-
-      
     </div>
-  </main>
 
-  <footer>
-    <div class="container">© 2025 Магазин — Контактная информация в разделе Контакты</div>
-  </footer>
+    <div class="footer">© 2025 Магазин — Контактная информация в разделе Контакты</div>
+  </div>
 </body>
 </html>
